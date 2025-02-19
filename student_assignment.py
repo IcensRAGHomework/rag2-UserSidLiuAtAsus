@@ -1,10 +1,10 @@
-import json
-import traceback
+#import json
+#import traceback
 
 '''from model_configurations import get_model_configuration'''
 
-from langchain_openai import AzureChatOpenAI
-from langchain_core.messages import HumanMessage
+#from langchain_openai import AzureChatOpenAI
+#from langchain_core.messages import HumanMessage
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import (CharacterTextSplitter,
