@@ -33,8 +33,7 @@ def hw02_1(q1_pdf):
     docs = loader.load()
     text_splitter = CharacterTextSplitter(chunk_overlap=0)
     chunks = text_splitter.split_documents(docs)
-    print(chunks[-1].page_content)
-    print(chunks[-1].metadata)
+    return chunks[-1]
 
 def hw02_2(q2_pdf):
     pass
