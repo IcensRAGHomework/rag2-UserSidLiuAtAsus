@@ -9,7 +9,7 @@ from langchain_core.messages import HumanMessage
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import (CharacterTextSplitter,
                                       RecursiveCharacterTextSplitter)
-from rich import print as pprint
+#from rich import print as pprint
 
 '''
 gpt_chat_version = 'gpt-4o'
@@ -33,7 +33,10 @@ def hw02_1(q1_pdf):
     docs = loader.load()
     text_splitter = CharacterTextSplitter(chunk_overlap=0)
     chunks = text_splitter.split_documents(docs)
-    pprint(chunks[-1])
+    print(chunks[-1].page_content)
+    print(chunks[-1].metadata)
 
 def hw02_2(q2_pdf):
     pass
+
+hw02_1(q1_pdf)
